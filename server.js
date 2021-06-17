@@ -34,6 +34,6 @@ app.use(cors());
 
 
 // Setup Server
-app.listen(port,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log('serverIsRunning successfully');
 })
